@@ -1,12 +1,14 @@
 extends Node2D
 
 
+const DISABLED_MODULATE = Color(.5, .5, .5, .5)
+
 export var enabled = true setget set_enabled
 
 
 func set_enabled(value):
 	enabled = value
-	modulate = Color.white if enabled else Color(.5, .5, .5, .5)
+	modulate = Color.white if enabled else DISABLED_MODULATE
 
 
 func play():
