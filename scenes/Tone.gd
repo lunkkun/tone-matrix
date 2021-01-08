@@ -24,6 +24,8 @@ func _input_event(_viewport, event, _shape_idx):
 func set_enabled(value):
 	enabled = value
 	modulate = Color.white if enabled else Color(.5, .5, .5)
+	
+	$"/root/SaveFile".save()
 
 
 func play():

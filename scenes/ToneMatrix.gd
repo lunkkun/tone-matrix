@@ -11,6 +11,8 @@ func set_beats(value):
 	for beat in get_children():
 		beat.enabled = count < beats
 		count += 1
+	
+	$"/root/SaveFile".save()
 
 
 func play(beat):
