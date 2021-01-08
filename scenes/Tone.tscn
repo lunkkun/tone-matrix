@@ -21,6 +21,6 @@ shape = SubResource( 1 )
 texture = ExtResource( 2 )
 
 [node name="Sample" type="AudioStreamPlayer" parent="."]
-volume_db = -6.0
+volume_db = -10.0
 
 [node name="Tween" type="Tween" parent="."]
