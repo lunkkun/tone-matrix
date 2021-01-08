@@ -1,0 +1,103 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://scenes/Tone.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/Beat.gd" type="Script" id=2]
+[ext_resource path="res://assets/sounds/pad_low_f.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/sounds/pad_low_eb.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/sounds/pad_low_c.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/sounds/pad_mid_eb.wav" type="AudioStream" id=6]
+[ext_resource path="res://assets/sounds/pad_high_eb.wav" type="AudioStream" id=7]
+[ext_resource path="res://assets/sounds/pad_high_bb.wav" type="AudioStream" id=8]
+[ext_resource path="res://assets/sounds/pad_low_bb.wav" type="AudioStream" id=9]
+[ext_resource path="res://assets/sounds/pad_high_f.wav" type="AudioStream" id=10]
+[ext_resource path="res://assets/sounds/pad_low_g.wav" type="AudioStream" id=11]
+[ext_resource path="res://assets/sounds/pad_high_g.wav" type="AudioStream" id=12]
+[ext_resource path="res://assets/sounds/pad_mid_f.wav" type="AudioStream" id=13]
+[ext_resource path="res://assets/sounds/pad_high_c.wav" type="AudioStream" id=14]
+[ext_resource path="res://assets/sounds/pad_top_c.wav" type="AudioStream" id=15]
+[ext_resource path="res://assets/sounds/pad_mid_c.wav" type="AudioStream" id=16]
+[ext_resource path="res://assets/sounds/pad_mid_g.wav" type="AudioStream" id=17]
+[ext_resource path="res://assets/sounds/pad_mid_bb.wav" type="AudioStream" id=18]
+
+[node name="Beat" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Tone" parent="." instance=ExtResource( 1 )]
+position = Vector2( 40, 40 )
+color = Color( 0.658824, 0.745098, 0.792157, 1 )
+sample = ExtResource( 15 )
+
+[node name="Tone2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 40, 88 )
+color = Color( 0.623529, 0.682353, 0.752941, 1 )
+sample = ExtResource( 8 )
+
+[node name="Tone3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 40, 136 )
+color = Color( 0.494118, 0.568627, 0.658824, 1 )
+sample = ExtResource( 12 )
+
+[node name="Tone4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 40, 184 )
+color = Color( 0.447059, 0.52549, 0.627451, 1 )
+sample = ExtResource( 10 )
+
+[node name="Tone5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 40, 232 )
+color = Color( 0.34902, 0.435294, 0.541176, 1 )
+sample = ExtResource( 7 )
+
+[node name="Tone6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 40, 280 )
+color = Color( 0.301961, 0.388235, 0.498039, 1 )
+sample = ExtResource( 14 )
+
+[node name="Tone7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 40, 328 )
+color = Color( 0.627451, 0.615686, 0.756863, 1 )
+sample = ExtResource( 18 )
+
+[node name="Tone8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 40, 376 )
+color = Color( 0.529412, 0.517647, 0.686275, 1 )
+sample = ExtResource( 17 )
+
+[node name="Tone9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 40, 424 )
+color = Color( 0.466667, 0.454902, 0.631373, 1 )
+sample = ExtResource( 13 )
+
+[node name="Tone10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 40, 472 )
+color = Color( 0.396078, 0.380392, 0.572549, 1 )
+sample = ExtResource( 6 )
+
+[node name="Tone11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 40, 520 )
+color = Color( 0.32549, 0.309804, 0.501961, 1 )
+sample = ExtResource( 16 )
+
+[node name="Tone12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 40, 568 )
+color = Color( 0.721569, 0.67451, 0.784314, 1 )
+sample = ExtResource( 9 )
+
+[node name="Tone13" parent="." instance=ExtResource( 1 )]
+position = Vector2( 40, 616 )
+color = Color( 0.67451, 0.607843, 0.764706, 1 )
+sample = ExtResource( 11 )
+
+[node name="Tone14" parent="." instance=ExtResource( 1 )]
+position = Vector2( 40, 664 )
+color = Color( 0.588235, 0.513726, 0.694118, 1 )
+sample = ExtResource( 3 )
+
+[node name="Tone15" parent="." instance=ExtResource( 1 )]
+position = Vector2( 40, 712 )
+color = Color( 0.501961, 0.419608, 0.619608, 1 )
+sample = ExtResource( 4 )
+
+[node name="Tone16" parent="." instance=ExtResource( 1 )]
+position = Vector2( 40, 760 )
+color = Color( 0.454902, 0.368627, 0.576471, 1 )
+sample = ExtResource( 5 )

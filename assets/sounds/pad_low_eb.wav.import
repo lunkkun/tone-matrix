@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pad_low_eb.wav-531718e8ac2b4f4b7bf11118b9fc725e.sample"
+
+[deps]
+
+source_file="res://assets/sounds/pad_low_eb.wav"
+dest_files=[ "res://.import/pad_low_eb.wav-531718e8ac2b4f4b7bf11118b9fc725e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
