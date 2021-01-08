@@ -7,7 +7,6 @@
 script = ExtResource( 2 )
 
 [node name="ToneMatrix" parent="." instance=ExtResource( 1 )]
-beats = 12
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.25
