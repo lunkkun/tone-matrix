@@ -14,3 +14,8 @@ func set_enabled(value):
 func play():
 	for tone in get_children():
 		tone.play()
+
+
+func reset():
+	for tone in get_children():
+		tone.set_enabled(false, false)

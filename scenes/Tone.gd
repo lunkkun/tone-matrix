@@ -2,6 +2,7 @@ tool
 extends Area2D
 
 
+const MODULATE_DISABLED = Color(.5, .5, .5)
 const MODULATE_PLAYING = Color.white
 const MODULATE_NOT_PLAYING = Color.gray
 
@@ -21,11 +22,12 @@ func _input_event(_viewport, event, _shape_idx):
 		set_enabled(not enabled)
 
 
-func set_enabled(value):
+func set_enabled(value, save = true):
 	enabled = value
-	modulate = Color.white if enabled else Color(.5, .5, .5)
+	modulate = Color.white if enabled else MODULATE_DISABLED
 	
-	$"/root/SaveFile".save()
+	if save:
+		$"/root/SaveFile".save()
 
 
 func play():

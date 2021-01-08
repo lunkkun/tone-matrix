@@ -29,3 +29,10 @@ func play():
 
 func _on_Timer_timeout():
 	next_beat()
+
+
+func _unhandled_key_input(event):
+	if event.is_action_pressed("speed_up") and bpm < 480:
+		set_bpm(bpm + 1)
+	elif event.is_action_pressed("speed_down") and bpm > 60:
+		set_bpm(bpm - 1)
