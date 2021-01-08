@@ -7,7 +7,7 @@ const MODULATE_NOT_PLAYING = Color.gray
 
 export(Color) var color = Color.white
 export(AudioStream) var sample
-export var playing = false setget set_playing
+export var enabled = false setget set_enabled
 
 
 # Called when the node enters the scene tree for the first time.
@@ -18,17 +18,17 @@ func _ready():
 
 func _input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.button_index == 1 and event.pressed:
-		set_playing(not playing)
+		set_enabled(not enabled)
 
 
-func set_playing(value):
-	playing = value
-	modulate = Color.white if playing else Color(.5, .5, .5)
+func set_enabled(value):
+	enabled = value
+	modulate = Color.white if enabled else Color(.5, .5, .5)
 
 
 func play():
 	var flash_color = MODULATE_NOT_PLAYING
-	if playing:
+	if enabled:
 		$Sample.play()
 		flash_color = MODULATE_PLAYING
 	
