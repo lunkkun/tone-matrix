@@ -57,6 +57,11 @@ clear_pattern={
  ]
 }
 
+[physics]
+
+common/physics_fps=240
+common/physics_jitter_fix=0.0
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"

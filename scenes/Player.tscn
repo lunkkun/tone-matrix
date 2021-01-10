@@ -9,5 +9,7 @@ script = ExtResource( 2 )
 [node name="ToneMatrix" parent="." instance=ExtResource( 1 )]
 
 [node name="Timer" type="Timer" parent="."]
+process_priority = -1
+process_mode = 0
 wait_time = 0.25
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
