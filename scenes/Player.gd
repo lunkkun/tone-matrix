@@ -1,7 +1,7 @@
 extends Node
 
 
-export(int, 60, 480) var bpm = 240 setget set_bpm
+export(int, 40, 480) var bpm = 120 setget set_bpm
 
 var beat = -1
 
@@ -12,7 +12,9 @@ func _ready():
 
 func set_bpm(value):
 	bpm = value
-	$Timer.wait_time = 60.0 / bpm
+	$Timer.wait_time = 30.0 / bpm # triggering twice per beat
+	
+	print("set bpm to " + str(bpm))
 	
 	$"/root/SaveFile".save()
 
